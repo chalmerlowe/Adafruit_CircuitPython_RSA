@@ -264,7 +264,7 @@ def decrypt(crypto: bytes, priv_key: PrivateKey) -> bytes:
 
 
 def sign_hash(
-    hash_value: Optional[bytes],
+    hash_value: bytes,
     priv_key: PrivateKey,
     hash_method: Literal["MD5", "SHA-1", "SHA-224", "SHA-256", "SHA-384", "SHA-512"],
 ) -> bytes:
